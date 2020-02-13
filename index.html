@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta CEP</title>
+</head>
+
+
+<nav class="navbar navbar-light bg-light">
+    <a href="#" class="navbar-brand">
+        <img 
+            src="busca-cep.png"
+            width="200"
+            height="150"
+            class="d-inline-block align-top"
+            alt="">
+        Buscandor de CEP
+    </a>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">API</a>
+        </li>
+    </ul>
+</nav>
+<hr>
+<form data-form>
+    <div class="container">
+        <div class="form-group">
+            <label>CEP</label>
+            <input id="cep" type="text" class="form-control" data-cep placeholder="Digite o CEP aqui">
+            <input type="submit" value="enviar" class="btn btn-dark">
+        </div>
+        
+    </div>
+</form>
+
+<hr>
+
+<!--Tabela-->
+<table class="table" id="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Logradouro</th>
+            <th scope="col">Bairro</th>
+            <th scope="col">Complemento</th>
+            <th scope="col">Cidade</th>
+            <th scope="col">UF</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<body>
+    <script src="app.js"></script>
+</body>
+</html>
